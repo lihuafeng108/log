@@ -36,9 +36,9 @@ int main(void)
 
 	gs_wr = fopen("log.txt", "a+");  //追加方式打开，文件存在则保留原内容，不存在则创建
 	debug_log_init(gs_wr);
-	
 
-	glog("run start....");	  //故意测试结束符不是'\n'
+
+	glog("run start......");	  //故意测试结束符不是'\n'
 	glog("汕大电子计算机校友联盟, 日期:%s %s\n", __DATE__, __TIME__ );
 	printf("accept your command(q-退出程序, 其他无效):");
 	while(1)
@@ -49,9 +49,9 @@ int main(void)
 			break;
 		}
 	}
-	glog("out....\n");
-	
+	glog("out......\n");
+
 	fclose(gs_wr);
-	
+
 }
 
